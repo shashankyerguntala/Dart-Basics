@@ -24,7 +24,7 @@ void main(){
   
 
   
-  print(welcome1('Shashank','Yerguntala'));
+  print(welcome1('Sharktank','Yerguntala'));
   print(welcome2(name: 'Metro', surname:'Pimpri'));
   print(welcome3('shash'));
 

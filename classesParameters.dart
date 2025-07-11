@@ -1,6 +1,8 @@
 void main(){
-  var x=Person(name: 'shashank', age: 22);
-  print(x);
+  var p=Person(name: 'shashank', age: 22);
+  
+  var car1=Car();//*uses deafult values.
+  var car2=Car(brand : 'Porsche');
 
 }
 //* Named Parameters (Required Keyword)
