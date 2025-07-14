@@ -1,23 +1,22 @@
 import 'dart:io';
 extension Capitalize on String {
   String capitalize (){
-    if(this.trim().isEmpty ){
-      print('Enter Valid Input !');
+    List<String > list=this.split('. ');
+    for(int i=0;i<list.length;i++){
+      if(!list[i].isEmpty){
+        list[i]=list[i][0].toUpperCase() + list[i].substring(1);
+      }
     }
-    String firstL=this[0].toUpperCase();
-    String lastL=this.substring(1);
-    return firstL+lastL;
-
-}
+    return list.join('. ');
+    }
 }
 void main(){
-  print("Enter Your Name: ");
+  print("Enter Sentence : ");
 String? name=stdin.readLineSync();
-if(name==null){
-  print('Enter Valid Input ');
+
+if(name==null || name.split(name).isEmpty){
+  print('Enter Valid string !');
 }
-else{
-  print(name.capitalize());
-}
+print(name!.capitalize());
 
 }
